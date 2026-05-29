@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#3056d3">
+<title>RunningHero — 隱私權政策</title>
+<link rel="stylesheet" href="/shared-assets/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="muted"><a href="/runninghero/">← 回 RunningHero</a></p>
+  <span class="eyebrow">RunningHero</span>
+  <h1>隱私權政策</h1>
+  <p class="lede">生效日期：2026-05-29</p>
+
+  <div class="card">
+    <h2>我們收集什麼</h2>
+    <p>RunningHero 是一款跑步追蹤 App，必要時會處理下列資料，全部存在你的裝置或你的 iCloud 帳號內：</p>
+    <ul>
+      <li><strong>位置資料</strong>：GPS 軌跡、距離、配速、海拔。僅在跑步追蹤期間採集（含背景）。</li>
+      <li><strong>動作感測器</strong>：步頻、加速度（用於步幅推算與跑步機模式）。</li>
+      <li><strong>心率資料</strong>：來自你連接的藍牙心率帶或 Apple Health。包含即時 BPM 與 RR 間距（HRV）。</li>
+      <li><strong>個人健康資料</strong>：體重、身高、年齡、最大心率、靜止心率（由你手動輸入或從 Apple Health 讀取）。</li>
+      <li><strong>跑步紀錄與衍生統計</strong>：時間、距離、配速、卡路里、HR 區間分布、TRIMP、CTL/ATL/TSB、VO2max 估算等。</li>
+      <li><strong>賽事計畫與間歇課表</strong>：你自行建立的目標與課表。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>資料儲存位置</h2>
+    <h3>本機（不離開裝置）</h3>
+    <p>以下資料只存在你的 iPhone 本地，<strong>不會</strong>同步到 iCloud 或任何遠端伺服器：</p>
+    <ul>
+      <li>心率、HRV、體重、最大心率 / 靜止心率、卡路里等個人健康欄位</li>
+      <li>跑步詳細位置點（每秒 GPS 樣本）</li>
+      <li>AI Coach 對話紀錄（若你啟用此功能）</li>
+    </ul>
+    <p class="muted">遵守 Apple App Store 5.1.3(ii) 條款：HealthKit-enabled App 不得將個人健康資料存進 iCloud。</p>
+
+    <h3>iCloud（你的私人 CloudKit 容器）</h3>
+    <p>下列非健康類資料會透過 CloudKit 同步到你個人的 iCloud 帳號，僅你本人可存取：</p>
+    <ul>
+      <li>跑步 session 主檔（時間、距離、平均配速等彙整欄位）</li>
+      <li>賽事計畫、間歇課表</li>
+      <li>分段資料（不含 HR 衍生欄位）</li>
+    </ul>
+    <p class="muted">我們無法存取你的 iCloud 容器內容。</p>
+  </div>
+
+  <div class="card">
+    <h2>不會發生的事</h2>
+    <ul>
+      <li>我們<strong>沒有</strong>後端伺服器，<strong>不收集</strong>你的任何資料到我們名下。</li>
+      <li>不放置任何第三方分析 / 廣告 SDK。</li>
+      <li>不販售、不分享、不出借你的資料給任何第三方。</li>
+      <li>不要求你建立帳號或登入。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>第三方服務（你主動啟用時才會發生）</h2>
+    <ul>
+      <li><strong>Apple HealthKit</strong>：若你授權，App 會讀取體重 / 心率資料，並把跑步寫回為 HKWorkout。受 Apple 隱私規範。</li>
+      <li><strong>Open-Meteo</strong>：免費氣象 API。App 會把你的概略座標送過去取得氣溫與天氣。不傳送任何身分識別資訊。</li>
+      <li><strong>台灣環境部 OpenData</strong>：取得空氣品質 AQI，原理同上。</li>
+      <li><strong>Anthropic Claude API（選配）</strong>：若你在設定中輸入自己的 API key 啟用 AI Coach，本場跑步的數據摘要會送到 Anthropic 伺服器以產生講評。
+        你的 API key 存放於 iOS Keychain，僅用於 App 直接呼叫 Anthropic，不會經過任何第三方。
+        詳見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私政策</a>。
+      </li>
+      <li><strong>檔案匯出（GPX / TCX）</strong>：你按下匯出後，檔案會透過 iOS Share Sheet 由你選擇傳送目的地（如 Strava、Garmin Connect、AirDrop）。我們不參與此傳輸。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>你的權利</h2>
+    <ul>
+      <li><strong>檢視</strong>：所有資料都在你裝置上，可隨時於 App 內檢閱。</li>
+      <li><strong>匯出</strong>：設定 → 帳號 → 匯出我的資料，會產生包含 JSON / CSV / GeoJSON 的 ZIP。</li>
+      <li><strong>刪除</strong>：設定 → 帳號 → 刪除帳號，會清除本機與 iCloud 容器內所有資料。</li>
+      <li>你也可在系統「設定 → 隱私權」中隨時撤銷位置、動作、健康、藍牙權限。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>兒童</h2>
+    <p>本 App 並非以 13 歲以下兒童為對象，亦不會刻意收集兒童資料。</p>
+  </div>
+
+  <div class="card">
+    <h2>政策變更</h2>
+    <p>若有實質變更，會更新本頁的「生效日期」並在 App 內提示。</p>
+  </div>
+
+  <div class="card">
+    <h2>聯絡</h2>
+    <p>對隱私有任何疑問請來信：<a href="mailto:talentismin@gmail.com">talentismin@gmail.com</a></p>
+  </div>
+
+  <p class="footer">
+    © talentismin · <a href="/runninghero/">RunningHero</a> · <a href="/">talentismin</a>
+  </p>
+</div>
+</body>
+</html>
