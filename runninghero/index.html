@@ -9,38 +9,61 @@
 </head>
 <body>
 <div class="wrap">
-  <p class="muted"><a href="/">← 回 talentismin</a></p>
-  <span class="eyebrow">iOS App</span>
-  <h1>RunningHero</h1>
-  <p class="lede">給 iPhone-only 跑者的進階訓練分析。不用買手錶、不用配硬體，跑完就有 VO2max / TRIMP / HRV / 燃脂底物等手錶級別指標。</p>
+
+  <a class="crumb" href="/">talentismin</a>
+
+  <span class="eyebrow">iOS App · Running</span>
+  <h1 class="gradient">RunningHero</h1>
+  <p class="lede">給 iPhone-only 跑者的進階訓練分析。不用買手錶、不用配硬體，跑完就有手錶級別的指標：VO2max、TRIMP、HRV、燃脂底物、有氧效率漂移。</p>
+
+  <div class="meta">
+    <span>iOS 17+</span>
+    <span class="dot"></span>
+    <span>繁體中文</span>
+    <span class="dot"></span>
+    <span>Phone-first（不需 Apple Watch）</span>
+  </div>
 
   <div class="card">
     <h2>主要功能</h2>
-    <ul>
+    <ul class="feature-list">
       <li>GPS 路線追蹤、配速、海拔、步頻</li>
-      <li>藍牙心率帶連線（Polar H10 等 BLE HRM）</li>
+      <li>藍牙心率帶連線（Polar H10、Wahoo Tickr 等 BLE HRM）</li>
       <li>HR Zone（Karvonen 5 區）、HR Recovery、靜止心率歷史</li>
       <li>VO2max（Daniels 公式）、TRIMP / ATL / CTL / TSB 訓練負荷</li>
       <li>燃脂底物推估（脂肪 vs 碳水比例）、有氧效率漂移</li>
       <li>HRV 晨測（RMSSD），與訓練負荷交叉建議</li>
-      <li>賽事倒數 + Daniels/Riegel 預估完賽時間，內建台灣賽事日曆</li>
-      <li>間歇課表（structured workout） + 自動分段 + 語音教練</li>
-      <li>Apple Health 雙向同步、GPX / TCX 匯出（Strava / Garmin Connect）</li>
-      <li>選配繁中 AI Coach（自帶 Anthropic API key）</li>
+      <li>賽事倒數 + Daniels / Riegel 預估完賽時間，內建台灣賽事日曆</li>
+      <li>間歇課表（結構化 workout）+ 自動分段 + 繁中語音教練</li>
+      <li>Apple Health 雙向同步、GPX / TCX 匯出（Strava / Garmin Connect / TrainingPeaks）</li>
+      <li>選配繁中 AI Coach（自帶 Anthropic API key，BYOK）</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>連結</h2>
+    <h2>為什麼做這個</h2>
+    <p>大多數跑步 App 把 VO2max、TRIMP、HRV 這類分析鎖在 Garmin / Whoop / Stryd 等硬體生態裡。但 iPhone + 一條藍牙心率帶就有足夠的原始訊號，只是沒人把它做好。</p>
+    <p>RunningHero 走 phone-first，把 endurance 訓練的分析深度做到頂，不要求你買新裝置。</p>
+  </div>
+
+  <div class="card">
+    <h2>支援 / 隱私</h2>
     <ul>
-      <li><a href="/runninghero/privacy-policy.html">隱私權政策</a></li>
-      <li><a href="/runninghero/support.html">支援 / 聯絡</a></li>
+      <li><a href="/runninghero/privacy-policy.html">隱私權政策</a> — 預設不上傳，HealthKit 個資鎖本機</li>
+      <li><a href="/runninghero/support.html">支援 / 常見問題</a> — GPS、HRM、HRV、匯出、刪除帳號等</li>
+      <li>意見反饋：<a href="mailto:talentismin@gmail.com?subject=RunningHero">talentismin@gmail.com</a></li>
     </ul>
   </div>
 
-  <p class="footer">
-    © talentismin · <a href="mailto:talentismin@gmail.com">talentismin@gmail.com</a>
-  </p>
+  <footer class="footer">
+    <span class="copyright">© 2026 talentismin · RunningHero</span>
+    <span>
+      <a href="/runninghero/privacy-policy.html">隱私權</a> ·
+      <a href="/runninghero/support.html">支援</a> ·
+      <a href="/">talentismin</a>
+    </span>
+  </footer>
+
 </div>
 </body>
 </html>

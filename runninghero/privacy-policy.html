@@ -9,20 +9,29 @@
 </head>
 <body>
 <div class="wrap">
-  <p class="muted"><a href="/runninghero/">← 回 RunningHero</a></p>
-  <span class="eyebrow">RunningHero</span>
+
+  <a class="crumb" href="/runninghero/">RunningHero</a>
+
+  <span class="eyebrow">Privacy Policy</span>
   <h1>隱私權政策</h1>
-  <p class="lede">生效日期：2026-05-29</p>
+
+  <div class="meta">
+    <span>生效日期</span>
+    <span class="dot"></span>
+    <span>2026-05-29</span>
+  </div>
+
+  <p class="lede">RunningHero 是個 phone-first 的跑步追蹤 App。所有資料預設都留在你的裝置或你個人的 iCloud 容器內，沒有後端伺服器在收資料。</p>
 
   <div class="card">
     <h2>我們收集什麼</h2>
-    <p>RunningHero 是一款跑步追蹤 App，必要時會處理下列資料，全部存在你的裝置或你的 iCloud 帳號內：</p>
+    <p>必要時，App 會處理下列資料（全部在你的裝置內運作）：</p>
     <ul>
-      <li><strong>位置資料</strong>：GPS 軌跡、距離、配速、海拔。僅在跑步追蹤期間採集（含背景）。</li>
-      <li><strong>動作感測器</strong>：步頻、加速度（用於步幅推算與跑步機模式）。</li>
-      <li><strong>心率資料</strong>：來自你連接的藍牙心率帶或 Apple Health。包含即時 BPM 與 RR 間距（HRV）。</li>
-      <li><strong>個人健康資料</strong>：體重、身高、年齡、最大心率、靜止心率（由你手動輸入或從 Apple Health 讀取）。</li>
-      <li><strong>跑步紀錄與衍生統計</strong>：時間、距離、配速、卡路里、HR 區間分布、TRIMP、CTL/ATL/TSB、VO2max 估算等。</li>
+      <li><strong>位置資料</strong>：GPS 軌跡、距離、配速、海拔。僅在跑步追蹤期間採集（含背景模式）。</li>
+      <li><strong>動作感測器</strong>：步頻、加速度，用於步幅推算與跑步機模式。</li>
+      <li><strong>心率資料</strong>：來自你連接的藍牙心率帶或 Apple Health；包含即時 BPM 與 RR 間距（HRV）。</li>
+      <li><strong>個人健康資料</strong>：體重、身高、年齡、最大心率、靜止心率，由你手動輸入或從 Apple Health 讀取。</li>
+      <li><strong>跑步紀錄與衍生統計</strong>：時間、距離、配速、卡路里、HR 區間分布、TRIMP、CTL/ATL/TSB、VO2max 估算。</li>
       <li><strong>賽事計畫與間歇課表</strong>：你自行建立的目標與課表。</li>
     </ul>
   </div>
@@ -36,7 +45,9 @@
       <li>跑步詳細位置點（每秒 GPS 樣本）</li>
       <li>AI Coach 對話紀錄（若你啟用此功能）</li>
     </ul>
-    <p class="muted">遵守 Apple App Store 5.1.3(ii) 條款：HealthKit-enabled App 不得將個人健康資料存進 iCloud。</p>
+    <div class="note">
+      <strong>合規說明</strong>：依 Apple App Store 5.1.3(ii)，HealthKit-enabled App 不得將個人健康資料存進 iCloud。本 App 在實作上已確實隔離。
+    </div>
 
     <h3>iCloud（你的私人 CloudKit 容器）</h3>
     <p>下列非健康類資料會透過 CloudKit 同步到你個人的 iCloud 帳號，僅你本人可存取：</p>
@@ -45,16 +56,16 @@
       <li>賽事計畫、間歇課表</li>
       <li>分段資料（不含 HR 衍生欄位）</li>
     </ul>
-    <p class="muted">我們無法存取你的 iCloud 容器內容。</p>
+    <p class="muted">我們無法存取你的 iCloud 容器內容；你刪除 App 或登出 iCloud 即取回所有控制權。</p>
   </div>
 
   <div class="card">
     <h2>不會發生的事</h2>
     <ul>
-      <li>我們<strong>沒有</strong>後端伺服器，<strong>不收集</strong>你的任何資料到我們名下。</li>
-      <li>不放置任何第三方分析 / 廣告 SDK。</li>
-      <li>不販售、不分享、不出借你的資料給任何第三方。</li>
-      <li>不要求你建立帳號或登入。</li>
+      <li>我們<strong>沒有</strong>後端伺服器，<strong>不收集</strong>你的任何資料到我們名下</li>
+      <li>不放置任何第三方分析 / 廣告 SDK</li>
+      <li>不販售、不分享、不出借你的資料給任何第三方</li>
+      <li>不要求你建立帳號或登入</li>
     </ul>
   </div>
 
@@ -62,12 +73,9 @@
     <h2>第三方服務（你主動啟用時才會發生）</h2>
     <ul>
       <li><strong>Apple HealthKit</strong>：若你授權，App 會讀取體重 / 心率資料，並把跑步寫回為 HKWorkout。受 Apple 隱私規範。</li>
-      <li><strong>Open-Meteo</strong>：免費氣象 API。App 會把你的概略座標送過去取得氣溫與天氣。不傳送任何身分識別資訊。</li>
+      <li><strong>Open-Meteo</strong>：免費氣象 API。App 會把你的概略座標送過去取得氣溫與天氣，不傳送任何身分識別資訊。</li>
       <li><strong>台灣環境部 OpenData</strong>：取得空氣品質 AQI，原理同上。</li>
-      <li><strong>Anthropic Claude API（選配）</strong>：若你在設定中輸入自己的 API key 啟用 AI Coach，本場跑步的數據摘要會送到 Anthropic 伺服器以產生講評。
-        你的 API key 存放於 iOS Keychain，僅用於 App 直接呼叫 Anthropic，不會經過任何第三方。
-        詳見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私政策</a>。
-      </li>
+      <li><strong>Anthropic Claude API（選配）</strong>：若你在設定中輸入自己的 API key 啟用 AI Coach，本場跑步的數據摘要會送到 Anthropic 伺服器以產生講評。你的 API key 存放於 iOS Keychain，僅用於 App 直接呼叫 Anthropic，不會經過任何第三方。詳見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私政策</a>。</li>
       <li><strong>檔案匯出（GPX / TCX）</strong>：你按下匯出後，檔案會透過 iOS Share Sheet 由你選擇傳送目的地（如 Strava、Garmin Connect、AirDrop）。我們不參與此傳輸。</li>
     </ul>
   </div>
@@ -97,9 +105,15 @@
     <p>對隱私有任何疑問請來信：<a href="mailto:talentismin@gmail.com">talentismin@gmail.com</a></p>
   </div>
 
-  <p class="footer">
-    © talentismin · <a href="/runninghero/">RunningHero</a> · <a href="/">talentismin</a>
-  </p>
+  <footer class="footer">
+    <span class="copyright">© 2026 talentismin · RunningHero</span>
+    <span>
+      <a href="/runninghero/">產品頁</a> ·
+      <a href="/runninghero/support.html">支援</a> ·
+      <a href="/">talentismin</a>
+    </span>
+  </footer>
+
 </div>
 </body>
 </html>
